@@ -1,0 +1,111 @@
+.font-ranking {
+  font-size: 18px;
+}
+
+.font-ranking-number {
+  font-size: 50px;
+}
+
+.font-ranking-cases {
+  font-size: 12px;
+}
+
+.list-ranking {
+  margin-top: 30px;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.menu-panel {
+  background-color: #00070C;
+  min-height: 100vh;
+}
+
+.feed-panel {
+  background-color: #01001D;
+  overflow-y: scroll;
+  height: 100vh !important;
+}
+
+.ranking-panel {
+  background-color: #00070C;
+  overflow-y: scroll;
+  min-height: 100vh !important;
+}
+
+.avatar {
+  padding: 6px;
+  border: 1px solid #dd2651;
+}
+
+.avatar-container {
+  margin-top: 60px;
+}
+
+#gamertag {
+  font-size: 20px;
+}
+
+.cinza-tcc {
+  color: #F0F0F0;
+}
+
+.azul-tcc {
+  color: #16959c;
+}
+
+.vermelho-tcc {
+  color: #dd2651;
+}
+
+.cinza-mais-tcc {
+  color: #6D6D6C;
+}
+
+.branco {
+  color: white;
+}
+
+.details-item {
+  font-size: 15px;
+  padding: 8px
+}
+
+.ranking-number {
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.ranking-game {
+  font-size: 25px;
+}
+
+.ranking-detail {
+  margin-top: 20px;
+}
+
+.report-card {
+background-color: #14171A;
+}
+
+a:hover {
+  color: #16959c;
+}
+
+html, body, a:hover {
+  font-family: "Lato", cursive, sans-serif;
+  font-size: 17px;
+}
+
+col l12 cinza-mais-tcc details-item, span:hover {
+  color: #16959c;
+  cursor: pointer;
+}
+
+hr{
+  margin-top: 0px; 
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
