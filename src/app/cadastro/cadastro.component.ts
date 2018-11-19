@@ -14,6 +14,7 @@ export class CadastroComponent implements OnInit {
   email: string = '';
   gamertag: string = '';
   password: string = '';
+  passwordConfirm: string = '';
   avatar: string = '';
   users: User[] = [];
 
