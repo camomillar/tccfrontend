@@ -25,6 +25,7 @@ export class CadastroComponent implements OnInit {
   }
 
   cadastrar() {
+    this.avatar = (Math.floor(Math.random() * 5) + 1).toString() + '.png';
     let user = new User('', this.avatar, this.email, this.gamertag, this.password);
     this.service.saveUsuario(user).subscribe(
       (data) => {

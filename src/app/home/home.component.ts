@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   posts: Array<any> = []
   ranking = {}
   rankingPos = []
+  avatar: string;
   user
 
   constructor(private service: ReportService, private dataService: DataService, private router: Router) { }
@@ -28,6 +29,7 @@ export class HomeComponent implements OnInit {
       }
     )
     this.user = this.dataService.getLogged()
+    this.avatar = (Math.floor(Math.random()*5)+1)+'.png';
   }
 
   calcRanking(){
