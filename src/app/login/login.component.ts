@@ -27,7 +27,10 @@ export class LoginComponent implements OnInit, OnDestroy {
         this.dataService.saveLogged(data)
         this.router.navigateByUrl('/home')
       },
-      (error) => console.log(error)
+      (error) => {
+        console.log(error)
+        alert('Login Invalido')
+      } 
     )
   }
 

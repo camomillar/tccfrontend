@@ -28,10 +28,12 @@ export class CadastroComponent implements OnInit {
     let user = new User('', this.avatar, this.email, this.gamertag, this.password);
     this.service.saveUsuario(user).subscribe(
       (data) => {
-        console.log(data)
+        this.email = this.gamertag = this.password = this.passwordConfirm = ''
+        window.location.reload();
       },
       (error) => {
         console.log(error)
+        alert('Usuario ja cadastrado')
       }
     )
 

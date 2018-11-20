@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
 
   logout() {
     this.dataService.clearStorage()
-    this.router.navigateByUrl('/login')
+    this.router.navigateByUrl('/')
   }
 
   ngOnDestroy() {

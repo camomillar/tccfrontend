@@ -5,6 +5,8 @@ export class DataService {
 
   constructor() { }
 
+  cadastro:boolean = false;
+
   saveLogged(user){
     var jsonUser = JSON.stringify(user)
     localStorage.setItem('user', jsonUser)
