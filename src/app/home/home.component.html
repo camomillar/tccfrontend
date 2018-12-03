@@ -2,7 +2,7 @@
   <div class="col l2 menu-panel fixed">
     <br>
     <div class="center avatar-container">
-      <img src="../../assets/imgs/avatars/{{avatar}}" class="circle avatar" alt="" width="170" height="170">
+      <img src="../../assets/imgs/avatars/{{user.avatar}}" class="circle avatar" alt="" width="170" height="170">
       <div class="row">
         <br>
         <span class="col l12 cinza-tcc" id="gamertag">{{user.gamertag}}</span>
@@ -44,9 +44,39 @@
           </div>
 
           <div class="card-action">
-            <a href="#">Dar suporte</a>
+            <a (click)="likeReport(post._id)" class="pointer">{{post.likes}} Dar suporte</a>
+            <a (click)="toggleComment(post._id)" class="pointer">Comentários</a>
+          </div>
+
+        </div>
+        <div *ngIf="showComment[post._id]" >
+          <div *ngFor="let comment of comments[post._id]">
+            <div class="row" style="margin: 20px; border: solid #16959c;">
+              <div class="col s1">
+                <br>
+                <img class="white-text" width="50" height="50" src="../../assets/imgs/avatars/{{comment.avatar}}" />
+              </div>
+              <div class="col s11">
+                <h5 class="white-text" style="font-size: 13px;">{{comment.gamertag}}</h5>
+                <h5 class="cinza-mais-tcc" style="font-size: 18px;">{{comment.comentario}}</h5>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 10px;">
+            <div class="col s1">
+              <br>
+              <img class="white-text" width="60" height="60" src="../../assets/imgs/avatars/{{user.avatar}}" />
+            </div>
+            <div class="col s11">
+              <h5 class="white-text" style="font-size: 14px;">{{user.gamertag}}</h5>
+              <input type="text" [(ngModel)]="com">
+              <button class="btn right" (click)="addComment(post._id)">Enviar</button>
+            </div>
+
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -73,6 +103,4 @@
     </div>
   </div>
 
-
- 
 </div>
