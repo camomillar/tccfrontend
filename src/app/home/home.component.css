@@ -106,7 +106,7 @@ col l12 cinza-mais-tcc details-item, span:hover {
   cursor: pointer;
 }
 
-hr{
+.hr-custom{
   margin-top: 0px; 
   margin-right: 10px;
   margin-bottom: 25px;
@@ -114,4 +114,8 @@ hr{
 
 .pointer {
   cursor: pointer;
+}
+
+hr {
+  border-top: 1px solid #49cde4;
 }
