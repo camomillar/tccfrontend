@@ -21,6 +21,11 @@ export class HomeComponent implements OnInit {
   com = ""
   avatar: string;
   user
+  tweetObj = {
+    url: '',
+    text: '',
+    hashtags: ''
+  }
 
   constructor(private service: ReportService, private dataService: DataService, private router: Router) { }
 
@@ -29,6 +34,9 @@ export class HomeComponent implements OnInit {
     this.getReports()
     this.user = this.dataService.getLogged()
     this.avatar = (Math.floor(Math.random()*5)+1)+'.png';
+    this.tweetObj.url = "https://tccfront.herokuapp.com/";
+    this.tweetObj.text = encodeURIComponent("Ranking de jogos onde mulheres mais sofrem assédio");
+    this.tweetObj.hashtags ="GGreport"
   }
 
   getReports() {

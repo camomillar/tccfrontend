@@ -32,7 +32,7 @@
 .ranking-panel {
   background-color: #00060a;
   overflow-y: scroll;
-  min-height: 100vh !important;
+  max-height: 100vh !important;
 }
 
 .avatar {
@@ -89,7 +89,7 @@
 }
 
 .report-card {
-background-color: #14171A;
+  background-color: #14171A;
 }
 
 a:hover {
@@ -112,10 +112,21 @@ col l12 cinza-mais-tcc details-item, span:hover {
   margin-bottom: 25px;
 }
 
+.ranking-item {
+  margin-bottom: 6px !important;
+}
+
 .pointer {
   cursor: pointer;
 }
 
-hr {
+.hr-trad {
   border-top: 1px solid #49cde4;
+  border-bottom: none;
+}
+
+.hr-red {
+  border-top: 2px solid #c51f28;
+  border-bottom: none;
+  margin-top: 0px;
 }
