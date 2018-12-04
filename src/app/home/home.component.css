@@ -19,25 +19,25 @@
 }
 
 .menu-panel {
-  background-color: #00070C;
+  background-color: #00060a;
   min-height: 100vh;
 }
 
 .feed-panel {
-  background-color: #01001D;
+  background-color: #232323;
   overflow-y: scroll;
   height: 100vh !important;
 }
 
 .ranking-panel {
-  background-color: #00070C;
+  background-color: #00060a;
   overflow-y: scroll;
   min-height: 100vh !important;
 }
 
 .avatar {
   padding: 6px;
-  border: 1px solid #dd2651;
+  border: 2px solid #c51f28;
 }
 
 .avatar-container {
@@ -45,7 +45,7 @@
 }
 
 #gamertag {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .cinza-tcc {
@@ -53,11 +53,11 @@
 }
 
 .azul-tcc {
-  color: #16959c;
+  color: #49cde4;
 }
 
 .vermelho-tcc {
-  color: #dd2651;
+  color: #c51f28;
 }
 
 .cinza-mais-tcc {
@@ -75,7 +75,9 @@
 
 .ranking-number {
   font-weight: bold;
-  font-size: 80px;
+  font-family: "Lato", cursive, sans-serif;
+  font-size: 65px;
+  padding: 15px;
 }
 
 .ranking-game {
@@ -91,7 +93,7 @@ background-color: #14171A;
 }
 
 a:hover {
-  color: #16959c;
+  color: #49cde4;
 }
 
 html, body, a:hover {
@@ -100,7 +102,7 @@ html, body, a:hover {
 }
 
 col l12 cinza-mais-tcc details-item, span:hover {
-  color: #16959c;
+  color: #49cde4;
   cursor: pointer;
 }
 
