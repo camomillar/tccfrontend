@@ -19,7 +19,7 @@ html, body {
 }
 
 .div-bg1 {
-  background-image: url(./assets/imgs/bgs/bgtest.png);
+  background-image: url(./assets/imgs/bgs/1.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,7 +31,7 @@ html, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 102%;
   width: 100%;
 }
 .div-bg3 {
